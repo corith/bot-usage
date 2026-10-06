@@ -17,23 +17,23 @@ BotUsage shows your quota windows, official daily token totals, and local token 
 
 ## Install
 
-1. Download **[BotUsage 0.2.5](https://github.com/corith/bot-usage/releases/download/v0.2.5/BotUsage-v0.2.5-macos-universal.zip)**, or choose a newer version from [Releases](https://github.com/corith/bot-usage/releases/latest).
+1. Download **[BotUsage 0.2.6](https://github.com/corith/bot-usage/releases/download/v0.2.6/BotUsage-v0.2.6-macos-universal.zip)**, or choose a newer version from [Releases](https://github.com/corith/bot-usage/releases/latest).
 2. Unzip the download and move **BotUsage.app** to **Applications**.
 3. Open the app. Use the bot icon in the menu bar to view your usage.
 
-### First launch: Open Anyway
+### First launch
 
-Version 0.2.5 is ad-hoc signed and **has not been notarized by Apple**. macOS may block its first launch because the developer cannot be verified.
+Version 0.2.6 is **Developer ID signed and notarized by Apple**, with the notarization ticket attached to the app.
 
-After trying to open BotUsage, go to **System Settings → Privacy & Security**, scroll to the security message for BotUsage, and choose **Open Anyway**. Confirm **Open** when prompted. Only approve the app if you trust the download. See [Apple's instructions for opening an unnotarized app](https://support.apple.com/102445).
+macOS may ask you to confirm that you want to open an app downloaded from the internet. Choose **Open** to continue. See [Apple's guidance on opening downloaded apps](https://support.apple.com/102445).
 
 ## Updates
 
 Open the **Settings** gear in the panel footer and choose **Check for Updates…**. You can also opt in to automatic update checks in Settings.
 
-Updates use Sparkle and this public repository. **No GitHub account or access token is required.** Sparkle checks the signed update feed and verifies the downloaded update before installing and relaunching BotUsage. Update signatures and Apple notarization are separate; the first public release still requires the first-launch steps above.
+Updates use Sparkle and this public repository. **No GitHub account or access token is required.** Sparkle checks the signed update feed and verifies the downloaded update before installing and relaunching BotUsage. If you already use 0.2.5, you can update to 0.2.6 from Settings.
 
-**Upgrading from 0.2.4 or earlier?** Download and install 0.2.5 manually once. Earlier builds check the previous private repository; 0.2.5 and later use this public update channel.
+**Upgrading from 0.2.4 or earlier?** Download and install the latest version manually once. Earlier builds check the previous private repository; 0.2.5 and later use this public update channel.
 
 ## Reading your usage
 
