@@ -17,13 +17,13 @@ BotUsage shows your quota windows, official daily token totals, and local token 
 
 ## Install
 
-1. Download **[BotUsage 0.2.6](https://github.com/corith/bot-usage/releases/download/v0.2.6/BotUsage-v0.2.6-macos-universal.zip)**, or choose a newer version from [Releases](https://github.com/corith/bot-usage/releases/latest).
+1. Download **[BotUsage 0.2.7](https://github.com/corith/bot-usage/releases/download/v0.2.7/BotUsage-v0.2.7-macos-universal.zip)**, or choose a newer version from [Releases](https://github.com/corith/bot-usage/releases/latest).
 2. Unzip the download and move **BotUsage.app** to **Applications**.
 3. Open the app. Use the bot icon in the menu bar to view your usage.
 
 ### First launch
 
-Version 0.2.6 is **Developer ID signed and notarized by Apple**, with the notarization ticket attached to the app.
+Version 0.2.7 is **Developer ID signed and notarized by Apple**, with the notarization ticket attached to the app.
 
 macOS may ask you to confirm that you want to open an app downloaded from the internet. Choose **Open** to continue. See [Apple's guidance on opening downloaded apps](https://support.apple.com/102445).
 
@@ -31,7 +31,9 @@ macOS may ask you to confirm that you want to open an app downloaded from the in
 
 Open the **Settings** gear in the panel footer and choose **Check for Updates…**. You can also opt in to automatic update checks in Settings.
 
-Updates use Sparkle and this public repository. **No GitHub account or access token is required.** Sparkle checks the signed update feed and verifies the downloaded update before installing and relaunching BotUsage. If you already use 0.2.5, you can update to 0.2.6 from Settings.
+Updates use Sparkle and this public repository. **No GitHub account or access token is required.** Sparkle checks the signed update feed and verifies the downloaded update before installing and relaunching BotUsage.
+
+**Settings crashes in 0.2.5 or 0.2.6?** Version 0.2.7 fixes this crash. Quit BotUsage, download the [latest ZIP](https://github.com/corith/bot-usage/releases/latest), and replace **BotUsage.app** in **Applications** manually before reopening it.
 
 **Upgrading from 0.2.4 or earlier?** Download and install the latest version manually once. Earlier builds check the previous private repository; 0.2.5 and later use this public update channel.
 
