@@ -27,6 +27,10 @@ Version 0.2.7 is **Developer ID signed and notarized by Apple**, with the notari
 
 macOS may ask you to confirm that you want to open an app downloaded from the internet. Choose **Open** to continue. See [Apple's guidance on opening downloaded apps](https://support.apple.com/102445).
 
+<p align="center">
+  <img src="Artwork/BotUsageScreenshot.png" alt="BotUsage showing Codex usage in the Omarchy theme" width="380">
+</p>
+
 ## Updates
 
 Open the **Settings** gear in the panel footer and choose **Check for Updates…**. You can also opt in to automatic update checks in Settings.
