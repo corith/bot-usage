@@ -145,7 +145,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 ## Omarchy
 
-The Omarchy theme uses colors from the [Osaka Jade palette](https://github.com/basecamp/omarchy/blob/quattro/themes/osaka-jade/colors.toml). The included Omarchy license is reproduced below.
+The Osaka Jade theme uses colors from [Omarchy's Osaka Jade palette](https://github.com/basecamp/omarchy/blob/quattro/themes/osaka-jade/colors.toml). The included Omarchy license is reproduced below.
 
 ```text
 Copyright (c) David Heinemeier Hansson

@@ -4,31 +4,31 @@
 
 # BotUsage
 
-Codex usage, one click from your Mac's menu bar.
+Codex, Claude Code, and Grok Build usage, one click from your Mac's menu bar.
 
-BotUsage shows your quota windows, official daily token totals, and local token activity by model. It stays out of the Dock, refreshes while it runs, and offers four themes: macOS, Omarchy, Codex, and Demon.
+BotUsage shows available quota windows and local token activity by model for each provider, plus Codex's official daily totals. Choose a provider tab or open Combined to see all three together. It stays out of the Dock, refreshes while it runs, and offers four themes: macOS, Osaka Jade, Codex, and Ox Blood.
 
 **[Download the latest release](https://github.com/corith/bot-usage/releases/latest)** · **[Release notes](https://github.com/corith/bot-usage/releases)** · **[Report an issue](https://github.com/corith/bot-usage/issues)**
 
 ## Requirements
 
 - **macOS 14 Sonoma or later**, on Apple silicon or Intel. One universal download supports both.
-- **Codex Desktop or the Codex CLI**, installed and signed in to ChatGPT.
+- Install and sign in to the providers you want to view: **Codex Desktop or the Codex CLI**, **Claude Code**, and/or **Grok Build**. You do not need all three installed.
 
 ## Install
 
-1. Download **[BotUsage 0.2.7](https://github.com/corith/bot-usage/releases/download/v0.2.7/BotUsage-v0.2.7-macos-universal.zip)**, or choose a newer version from [Releases](https://github.com/corith/bot-usage/releases/latest).
+1. Download the latest universal ZIP from **[Releases](https://github.com/corith/bot-usage/releases/latest)**.
 2. Unzip the download and move **BotUsage.app** to **Applications**.
 3. Open the app. Use the bot icon in the menu bar to view your usage.
 
 ### First launch
 
-Version 0.2.7 is **Developer ID signed and notarized by Apple**, with the notarization ticket attached to the app.
+Version 0.2.8 is **Developer ID signed and notarized by Apple**, with its notarization ticket attached to the app.
 
 macOS may ask you to confirm that you want to open an app downloaded from the internet. Choose **Open** to continue. See [Apple's guidance on opening downloaded apps](https://support.apple.com/102445).
 
 <p align="center">
-  <img src="Artwork/BotUsageScreenshot.png" alt="BotUsage showing Codex usage in the Omarchy theme" width="380">
+  <img src="Artwork/BotUsageScreenshot.png" alt="BotUsage showing Codex usage in the Osaka Jade theme" width="380">
 </p>
 
 ## Updates
@@ -43,19 +43,24 @@ Updates use Sparkle and this public repository. **No GitHub account or access to
 
 ## Reading your usage
 
-- **Quota windows** show Codex's reported allowance and reset times. Hover for details.
+- **Quota windows** show each provider's available allowance and reset times. Hover for details.
 - **Official daily totals** come from your signed-in Codex account, when available.
-- **Local raw activity** comes from Codex session history on this Mac, including archived sessions. It shows recent activity and model breakdowns, so it can differ from account-wide official totals.
+- **Local raw activity** comes from provider session history on this Mac. It shows recent activity, model breakdowns, and each provider's most-used identified model, so it can differ from account-wide totals. Unattributed activity remains in the totals.
+- **Combined** keeps allowances separate and estimates total local tokens over the last seven calendar days and rolling last hour. Missing or incomplete histories are labeled; provider percentages and billing costs are not added together.
 
 Raw tokens are input plus output, including cached input. Repeated use of conversation context counts again. **Fresh** tokens exclude cached input. Local token counts are diagnostic activity totals, not a bill or a measure of remaining subscription allowance. Missing or unreadable history can produce incomplete totals; BotUsage displays a warning when it detects this.
 
-BotUsage uses your installed Codex and its existing sign-in to request account data. It also reads local session history. It contacts GitHub for update checks and downloads.
+BotUsage uses each installed provider's existing sign-in to request allowance data and reads local session history. Claude and Grok requests do not send a model prompt or start a coding conversation. It contacts GitHub for update checks and downloads.
 
 ## Make it yours
 
-Choose a theme from the panel's dropdown or **Settings → Theme**. Enable **Open at Login** in Settings to start BotUsage when you sign in to your Mac; keep the app in Applications first.
+Choose a theme from the panel's dropdown or **Settings → Theme**. Osaka Jade and Ox Blood are the new names for Omarchy and Demon; saved theme choices carry forward. Use **Settings → Status Bar %** to select Codex, Claude Weekly, Claude 5h, or Grok Build independently of the open tab. Enable **Open at Login** in Settings to start BotUsage when you sign in to your Mac; keep the app in Applications first.
 
-Data normally refreshes every five minutes. Opening the panel or waking your Mac refreshes data that is more than a minute old. Use the refresh button to retry sooner. If official usage is unavailable, confirm that Codex is installed and signed in, then refresh again.
+The panel fits the available screen height while its metrics scroll. Click the centered **cmd Q** footer button or press **Command-Q** while the app is active to quit.
+
+Data normally refreshes every five minutes. Opening the panel attempts a Claude refresh, with a short cooldown and longer retry delays after failures. Claude keeps account-matched last-known readings with their original age; a passed reset is labeled. Codex and Grok also retain prior limits after temporary failures, with freshness and reset rules preventing stale percentages from appearing in the menu bar.
+
+Use the refresh button to check the selected tab, or all providers from Combined. If allowance data is unavailable, update and sign in to the relevant provider, then refresh. Settings can remove the previous Claude status-line connection if you used an earlier preview; it is no longer required.
 
 ## Support
 
