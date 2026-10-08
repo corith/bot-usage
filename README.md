@@ -6,9 +6,11 @@
 
 Codex, Claude Code, and Grok Build usage, one click from your Mac's menu bar.
 
-BotUsage shows available quota windows and local token activity by model for each provider, plus Codex's official daily totals. Choose a provider tab or open Combined to see all three together. It stays out of the Dock, refreshes while it runs, and offers four themes: macOS, Osaka Jade, Codex, and Ox Blood.
+BotUsage shows available quota windows and local token activity by model for each provider, plus Codex's official daily totals. Choose a provider tab or open Combined to see all three together. It stays out of the Dock, refreshes while it runs, and offers five themes: macOS, Osaka Jade, Codex, Claude, and Ox Blood.
 
 **[Download the latest release](https://github.com/corith/bot-usage/releases/latest)** · **[Release notes](https://github.com/corith/bot-usage/releases)** · **[Report an issue](https://github.com/corith/bot-usage/issues)**
+
+**Version 0.2.9 (build 11)** adds the Claude theme and more reliable Claude limit tracking.
 
 ## Requirements
 
@@ -23,7 +25,7 @@ BotUsage shows available quota windows and local token activity by model for eac
 
 ### First launch
 
-Version 0.2.8 is **Developer ID signed and notarized by Apple**, with its notarization ticket attached to the app.
+Version 0.2.9 is **Developer ID signed and notarized by Apple**, with its notarization ticket attached to the app.
 
 macOS may ask you to confirm that you want to open an app downloaded from the internet. Choose **Open** to continue. See [Apple's guidance on opening downloaded apps](https://support.apple.com/102445).
 
@@ -43,7 +45,7 @@ Updates use Sparkle and this public repository. **No GitHub account or access to
 
 ## Reading your usage
 
-- **Quota windows** show each provider's available allowance and reset times. Hover for details.
+- **Quota windows** show each provider's available allowance and reset times, including model-specific Claude weekly limits when reported. Hover for details.
 - **Official daily totals** come from your signed-in Codex account, when available.
 - **Local raw activity** comes from provider session history on this Mac. It shows recent activity, model breakdowns, and each provider's most-used identified model, so it can differ from account-wide totals. Unattributed activity remains in the totals.
 - **Combined** keeps allowances separate and estimates total local tokens over the last seven calendar days and rolling last hour. Missing or incomplete histories are labeled; provider percentages and billing costs are not added together.
@@ -54,11 +56,11 @@ BotUsage uses each installed provider's existing sign-in to request allowance da
 
 ## Make it yours
 
-Choose a theme from the panel's dropdown or **Settings → Theme**. Osaka Jade and Ox Blood are the new names for Omarchy and Demon; saved theme choices carry forward. Use **Settings → Status Bar %** to select Codex, Claude Weekly, Claude 5h, or Grok Build independently of the open tab. Enable **Open at Login** in Settings to start BotUsage when you sign in to your Mac; keep the app in Applications first.
+Choose a theme from the panel's dropdown or **Settings → Theme**. The new **Claude** theme uses orange accents with cream surfaces in Light Mode and warm dark surfaces in Dark Mode, following your Mac's appearance automatically. **macOS** also follows system appearance; **Osaka Jade**, **Codex**, and **Ox Blood** stay dark. Osaka Jade and Ox Blood are the new names for Omarchy and Demon; saved theme choices carry forward. Use **Settings → Status Bar %** to select Codex, Claude Weekly, Claude 5h, or Grok Build independently of the open tab. Enable **Open at Login** in Settings to start BotUsage when you sign in to your Mac; keep the app in Applications first.
 
 The panel fits the available screen height while its metrics scroll. Click the centered **cmd Q** footer button or press **Command-Q** while the app is active to quit.
 
-Data normally refreshes every five minutes. Opening the panel attempts a Claude refresh, with a short cooldown and longer retry delays after failures. Claude keeps account-matched last-known readings with their original age; a passed reset is labeled. Codex and Grok also retain prior limits after temporary failures, with freshness and reset rules preventing stale percentages from appearing in the menu bar.
+Data normally refreshes every five minutes. Opening the panel attempts a Claude refresh, with a one-minute cooldown after success and longer retry delays after failures. Claude keeps account-matched last-known readings with their original age; verified model limits survive temporary failures, and newer readings saved by another Claude session are picked up automatically. A passed reset is labeled. Codex and Grok also retain prior limits after temporary failures, with freshness and reset rules preventing stale percentages from appearing in the menu bar.
 
 Use the refresh button to check the selected tab, or all providers from Combined. If allowance data is unavailable, update and sign in to the relevant provider, then refresh. Settings can remove the previous Claude status-line connection if you used an earlier preview; it is no longer required.
 
