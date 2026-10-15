@@ -10,7 +10,7 @@ BotUsage shows available quota windows and local token activity by model for eac
 
 **[Download the latest release](https://github.com/corith/bot-usage/releases/latest)** · **[Release notes](https://github.com/corith/bot-usage/releases)** · **[Report an issue](https://github.com/corith/bot-usage/issues)**
 
-**Version 0.2.9 (build 11)** adds the Claude theme and more reliable Claude limit tracking.
+**Version 0.3.0 (build 12)** speeds up Codex history refreshes, fixes false incomplete-history warnings from large conversations, and clarifies local activity.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ BotUsage shows available quota windows and local token activity by model for eac
 
 ### First launch
 
-Version 0.2.9 is **Developer ID signed and notarized by Apple**, with its notarization ticket attached to the app.
+Version 0.3.0 is **Developer ID signed and notarized by Apple**, with its notarization ticket attached to the app.
 
 macOS may ask you to confirm that you want to open an app downloaded from the internet. Choose **Open** to continue. See [Apple's guidance on opening downloaded apps](https://support.apple.com/102445).
 
